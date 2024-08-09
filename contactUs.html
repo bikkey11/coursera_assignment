@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Connect</title>
+    <script src="https://kit.fontawesome.com/d4d0ddae95.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-plane"></i>
+          <h2>TravelBloom</h2>
+        </div>
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <div class="searchbar">
+          <input
+            class="search_input"
+            size="23"
+            type="text"
+            placeholder="Enter a destination or keyword"
+          />
+          <div class="items">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search">Search</div>
+            <div class="clear">Clear</div>
+          </div>
+        </div>
+      </div>
+
+    <div class="containerContact">
+        <div class="sidebar">
+            <div class="line"></div>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input size="40" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input size="40" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea cols="30" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -43,6 +43,10 @@ body {
     cursor: pointer;
 
 }
+.list a {
+    text-decoration: none;
+    color: white;
+}
 
 .list li:hover {
     text-decoration: underline;
@@ -98,21 +102,21 @@ body {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    top: 20%;
+    top: 10%;
 
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 80px;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
 
 
 }
 
-.icons {
+.icons {  
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -127,7 +131,7 @@ body {
 }
 
 .line {
-    height: 120px;
+    height: 180px;
     width: 2px;
     background-color: bisque;
 }
@@ -175,4 +179,91 @@ body {
     height: 200px;
     width: 400px;
     object-fit: cover;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    gap: 150px;
+}
+.container h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+    line-height: 20px;
+}
+.aboutText {
+    font-size: 20px;
+    width: 60%;
+    border: 2px solid;
+    border-color: red;
+    padding: 4px;
+}
+.team{
+    display: flex;
+    align-items: start;
+    gap: 40px;
+    border: 2px solid;
+    border-color: red;
+    color: white;
+    width: max-content;
+    padding: 20px;
+}
+.team h2{
+    color: white;
+     font-size: 60px;
+     line-height: 10px;
+}
+.team img{
+    border-radius: 20px;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+.team p{
+    width: 150px;
+}
+.containerContact{
+    display: flex;
+    padding: 40px;
+    width: 90%;
+    gap: 150px;
+    position: relative;
+}
+#contact{
+    border: 2px solid;
+    border-color: red; 
+    padding: 10px 20px;
+    position: absolute;
+    right: 40%;
+    top: 20%;
+
+}
+.containerContact h1{
+    font-size: 50px;
+    color: white;
+    line-height: 10px;
+}
+.containerContact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.containerContact .form-group{
+    display: flex;
+    flex-direction: column
+}
+.form-group input{
+    padding: 6px;
+    outline: none;
+}
+
+form button{
+    
+    width: max-content;
+    padding: 10px;
+    cursor: pointer;
+    
 }
